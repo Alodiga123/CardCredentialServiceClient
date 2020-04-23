@@ -18,9 +18,12 @@ public class Constants {
     public static String PASSWORD_TEST ="c6DePc/9BRd2l5iL8vlcwgKfbQCOJbvhzsmFBi+iDagfTRTOnmyNmAvw0Kn5L60yG5QMxbFNdtL4wZdqe0rAS6C1duqmznK/UJN5XVPcMh6lIRIo6eAmzQ7xAFIC0uPd79RQerN+uvWKQFWXcWEces+rlR6SRtCZ+dXqGXWobEA=";
     public static String USER_TEST = "usuarioWStest";
     
-    public static String URL_TEST = "https://10.70.10.85:8000/CASA_SRTMX_TarjetaService";
+    /*public static String URL_TEST = "https://10.70.10.85:8000/CASA_SRTMX_TarjetaService";
     public static String URL_PROD = "https://10.70.10.71:8000/CASA_SRTMX_TarjetaService";
-    public static String URL_PROD_WS = "https://10.70.10.71:8000/CASA_SRTMX_TarjetaService?wsdl";
+    public static String URL_PROD_WS = "https://10.70.10.71:8000/CASA_SRTMX_TarjetaService?wsdl";*/
+    public static String URL_TEST = "https://card.credentials.ws:8000/CASA_SRTMX_TarjetaService";
+    public static String URL_PROD = "https://card.credentials.ws:8000/CASA_SRTMX_TarjetaService";
+    public static String URL_PROD_WS = "https://card.credentials.ws:8000/CASA_SRTMX_TarjetaService?wsdl";
     
     
     

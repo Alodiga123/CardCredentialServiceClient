@@ -47,6 +47,7 @@ import org.xml.sax.SAXException;
  */
 public class CardCredentialServiceClient {
 
+    private static final int CONNECTION_TIMEOUT = 5000;
     /**
      * @param args the command line arguments
      */
@@ -91,6 +92,7 @@ public class CardCredentialServiceClient {
             URL url = new URL(wsEndPoint);
             URLConnection connection = url.openConnection();
             HttpURLConnection httpConn = (HttpURLConnection) connection;
+            httpConn.setConnectTimeout(CONNECTION_TIMEOUT);
             ByteArrayOutputStream bout = new ByteArrayOutputStream();
             StringBuilder builder = new StringBuilder("<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:syn=\"http://ws.apache.org/ns/synapse\">");
             builder.append("<soapenv:Header/>");
@@ -287,6 +289,7 @@ public class CardCredentialServiceClient {
             final String TEST_URL = "https://10.70.10.71:8000/CASA_SRTMX_TarjetaService?wsdl";
             URL url = new URL(TEST_URL);
             HttpsURLConnection httpsCon = (HttpsURLConnection) url.openConnection();
+            httpsCon.setConnectTimeout(5000);
             httpsCon.setHostnameVerifier(new HostnameVerifier() {
                 public boolean verify(String hostname, SSLSession session) {
                     return true;
